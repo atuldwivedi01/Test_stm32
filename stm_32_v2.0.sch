@@ -13144,6 +13144,81 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/1372785"&gt; Datashee
 </deviceset>
 </devicesets>
 </library>
+<library name="AMS1117-3.3">
+<packages>
+<package name="SOT229P700X180-4N">
+<wire x1="-3.36" y1="-1.86" x2="-3.36" y2="1.86" width="0.127" layer="51"/>
+<wire x1="-3.36" y1="1.86" x2="3.36" y2="1.86" width="0.127" layer="51"/>
+<wire x1="3.36" y1="1.86" x2="3.36" y2="-1.86" width="0.127" layer="51"/>
+<wire x1="3.36" y1="-1.86" x2="-3.36" y2="-1.86" width="0.127" layer="51"/>
+<wire x1="-3.36" y1="-1.86" x2="-3.36" y2="1.86" width="0.127" layer="21"/>
+<wire x1="3.36" y1="-1.86" x2="3.36" y2="1.86" width="0.127" layer="21"/>
+<wire x1="-3.36" y1="-1.86" x2="-3.1" y2="-1.86" width="0.127" layer="21"/>
+<wire x1="3.11" y1="-1.86" x2="3.36" y2="-1.86" width="0.127" layer="21"/>
+<wire x1="3.36" y1="1.86" x2="1.87" y2="1.86" width="0.127" layer="21"/>
+<wire x1="-1.76" y1="1.86" x2="-3.36" y2="1.86" width="0.127" layer="21"/>
+<circle x="-2.29" y="-4.373" radius="0.1" width="0.2" layer="21"/>
+<text x="-3.69655" y="4.507990625" size="1.27225" layer="25">&gt;NAME</text>
+<text x="-3.696559375" y="-6.17095" size="1.272259375" layer="27">&gt;VALUE</text>
+<wire x1="-3.61" y1="2.11" x2="-3.61" y2="-2.11" width="0.05" layer="39"/>
+<wire x1="-3.61" y1="-2.11" x2="-3.01" y2="-2.11" width="0.05" layer="39"/>
+<wire x1="-3.01" y1="-2.11" x2="-3.01" y2="-4.25" width="0.05" layer="39"/>
+<wire x1="-3.01" y1="-4.25" x2="3.01" y2="-4.25" width="0.05" layer="39"/>
+<wire x1="3.01" y1="-4.25" x2="3.01" y2="-2.11" width="0.05" layer="39"/>
+<wire x1="3.01" y1="-2.11" x2="3.61" y2="-2.11" width="0.05" layer="39"/>
+<wire x1="3.61" y1="-2.11" x2="3.61" y2="2.11" width="0.05" layer="39"/>
+<wire x1="3.61" y1="2.11" x2="1.87" y2="2.11" width="0.05" layer="39"/>
+<wire x1="1.87" y1="2.11" x2="1.87" y2="4.25" width="0.05" layer="39"/>
+<wire x1="1.87" y1="4.25" x2="-1.87" y2="4.25" width="0.05" layer="39"/>
+<wire x1="-1.87" y1="4.25" x2="-1.87" y2="2.11" width="0.05" layer="39"/>
+<wire x1="-1.87" y1="2.11" x2="-3.61" y2="2.11" width="0.05" layer="39"/>
+<smd name="1" x="-2.29" y="-3.345" dx="0.93" dy="1.31" layer="1" roundness="15"/>
+<smd name="2" x="0" y="-3.345" dx="0.93" dy="1.31" layer="1" roundness="15"/>
+<smd name="3" x="2.29" y="-3.345" dx="0.93" dy="1.31" layer="1" roundness="15"/>
+<smd name="4" x="0" y="3.345" dx="3.24" dy="1.31" layer="1" roundness="15"/>
+</package>
+</packages>
+<symbols>
+<symbol name="AMS1117-3.3">
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<text x="-10.1766" y="5.597140625" size="2.54415" layer="95">&gt;NAME</text>
+<text x="-10.1692" y="-8.135359375" size="2.5423" layer="96">&gt;VALUE</text>
+<pin name="VIN" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="VOUT" x="15.24" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="ADJ/GND" x="15.24" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AMS1117-3.3" prefix="U">
+<description>Sot223/Pkg 1-Amp 3.3-Volt Low Drop Out Voltage Regulatator</description>
+<gates>
+<gate name="G$1" symbol="AMS1117-3.3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT229P700X180-4N">
+<connects>
+<connect gate="G$1" pin="ADJ/GND" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="DESCRIPTION" value=" Sot223/Pkg 1-Amp 3.3-Volt Low Drop Out Voltage Regulatator "/>
+<attribute name="MF" value="Advanced Monolithic Systems"/>
+<attribute name="MP" value="AMS1117-3.3"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13277,6 +13352,12 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/1372785"&gt; Datashee
 <part name="P+14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="VCC 3.3"/>
 <part name="SUPPLY28" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="VCC 3.3"/>
+<part name="U1" library="AMS1117-3.3" deviceset="AMS1117-3.3" device=""/>
+<part name="C12" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="22nF"/>
+<part name="C13" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:6240337/1" value="22nF"/>
+<part name="SUPPLY29" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="VCC5V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="VCC5V"/>
+<part name="P+16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="VCC 3.3"/>
 </parts>
 <sheets>
 <sheet>
@@ -13421,7 +13502,7 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/1372785"&gt; Datashee
 <attribute name="VALUE" x="99.822" y="181.61" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+4" gate="VCC" x="86.36" y="170.18" smashed="yes" rot="R270">
-<attribute name="VALUE" x="73.66" y="170.18" size="1.778" layer="96"/>
+<attribute name="VALUE" x="78.74" y="167.64" size="1.778" layer="96"/>
 </instance>
 <instance part="P+5" gate="VCC" x="96.52" y="195.58" smashed="yes">
 <attribute name="VALUE" x="93.98" y="193.04" size="1.778" layer="96" rot="R90"/>
@@ -13627,6 +13708,25 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/1372785"&gt; Datashee
 </instance>
 <instance part="P+15" gate="VCC" x="129.54" y="22.86" smashed="yes">
 <attribute name="VALUE" x="127" y="20.32" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U1" gate="G$1" x="50.8" y="147.32" smashed="yes" rot="R180">
+<attribute name="NAME" x="60.9766" y="141.722859375" size="2.54415" layer="95" rot="R180"/>
+<attribute name="VALUE" x="60.9692" y="155.455359375" size="2.5423" layer="96" rot="R180"/>
+</instance>
+<instance part="C12" gate="G$1" x="30.48" y="144.78" smashed="yes" rot="R270">
+<attribute name="VALUE" x="26.289" y="143.764" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C13" gate="G$1" x="68.58" y="149.86" smashed="yes" rot="R180">
+<attribute name="VALUE" x="67.564" y="154.051" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY29" gate="GND" x="20.32" y="149.86" smashed="yes" rot="R270">
+<attribute name="VALUE" x="17.145" y="151.765" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="VCC5V3" gate="VCC" x="68.58" y="139.7" smashed="yes" rot="R180">
+<attribute name="VALUE" x="71.12" y="144.78" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="P+16" gate="VCC" x="35.56" y="139.7" smashed="yes" rot="R180">
+<attribute name="VALUE" x="38.1" y="142.24" size="1.778" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -14171,6 +14271,23 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/1372785"&gt; Datashee
 <pinref part="P+15" gate="VCC" pin="VCC"/>
 <wire x1="129.54" y1="20.32" x2="129.54" y2="15.24" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="144.78" x2="68.58" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VIN"/>
+<wire x1="66.04" y1="144.78" x2="68.58" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="VCC5V3" gate="VCC" pin="VCC"/>
+<wire x1="68.58" y1="142.24" x2="68.58" y2="144.78" width="0.1524" layer="91"/>
+<junction x="68.58" y="144.78"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="VOUT"/>
+<wire x1="33.02" y1="144.78" x2="35.56" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="P+16" gate="VCC" pin="VCC"/>
+<wire x1="35.56" y1="142.24" x2="35.56" y2="144.78" width="0.1524" layer="91"/>
+<junction x="35.56" y="144.78"/>
+</segment>
 </net>
 <net name="N$21" class="0">
 <segment>
@@ -14554,6 +14671,23 @@ Source: &lt;a href="http://uk.rs-online.com/web/p/products/1372785"&gt; Datashee
 <wire x1="71.12" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="106.68" x2="73.66" y2="104.14" width="0.1524" layer="91"/>
 <junction x="73.66" y="104.14"/>
+</segment>
+</net>
+<net name="VCC5V" class="0">
+<segment>
+<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="ADJ/GND"/>
+<wire x1="25.4" y1="144.78" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="149.86" x2="30.48" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="SUPPLY29" gate="GND" pin="GND"/>
+<wire x1="30.48" y1="149.86" x2="35.56" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="149.86" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
+<junction x="25.4" y="149.86"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="154.94" x2="68.58" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="157.48" x2="30.48" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="157.48" x2="30.48" y2="149.86" width="0.1524" layer="91"/>
+<junction x="30.48" y="149.86"/>
 </segment>
 </net>
 </nets>
